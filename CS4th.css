@@ -1,0 +1,82 @@
+:root {
+    --deep-blue: #313575;
+    --dark-purple: #321951;
+    --bright-purple: #633090;
+    --ruby-red: #B22E37;
+    --orange-fire: #F68318;
+    --golden-yellow: #FDC005;
+}
+
+body {
+    background: linear-gradient(135deg, var(--dark-purple), var(--deep-blue));
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+    color: white;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255,255,255,0.3);
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    color: #cbd5e1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+/* BASE CARD STYLE */
+.bug-card {
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+
+.bug-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* PERSONALITY COLORS BASED ON YOUR PALETTE */
+
+/* Core Group: Vibrant & Electric (Purple Focus) */
+.c-core { background: linear-gradient(145deg, var(--bright-purple), #8b5cf6); }
+.c-core:hover { box-shadow: 0 0 30px var(--bright-purple); }
+
+/* Admin Group: Deep & Powerful (Dark Blue Focus) */
+.c-admin { background: linear-gradient(145deg, var(--deep-blue), #1e1b4b); }
+.c-admin:hover { box-shadow: 0 0 30px var(--deep-blue); }
+
+/* Hidden Files: Subtle & Calm (Soft Purple/Blue) */
+.c-hidden { background: linear-gradient(145deg, #4c1d95, #312e81); opacity: 0.9; }
+.c-hidden:hover { opacity: 1; box-shadow: 0 0 30px #4c1d95; }
+
+/* Standalone Hafsa: Alert & Standout (Red/Orange Focus) */
+.c-standalone { background: linear-gradient(145deg, var(--ruby-red), var(--orange-fire)); }
+.c-standalone:hover { box-shadow: 0 0 30px var(--ruby-red); }
+
+/* The Boys: Flashy & Noticeable (Yellow/Orange Focus) */
+.c-boys { background: linear-gradient(145deg, var(--orange-fire), var(--golden-yellow)); color: #000; }
+.c-boys .tag { color: #000; }
+.c-boys:hover { box-shadow: 0 0 30px var(--golden-yellow); }
+
+.bitmoji { font-size: 4rem; margin-bottom: 15px; }
+h3 { margin: 5px 0; font-size: 1.3rem; font-weight: 800; }
+.tag { font-size: 0.7rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; }

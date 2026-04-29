@@ -1,0 +1,137 @@
+:root {
+    --bg-yellow: #FFD700;
+    --text-black: #050505;
+    --rainbow: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: var(--bg-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.warning-wrapper {
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.15);
+    border: 4px solid var(--text-black);
+    text-align: center;
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Rainbow Animated Header */
+.rainbow-header {
+    height: 12px;
+    background: var(--rainbow);
+    background-size: 200% 100%;
+    animation: moveRainbow 3s linear infinite;
+}
+
+@keyframes moveRainbow {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 200% 0%; }
+}
+
+.content-box {
+    padding: 60px 40px;
+}
+
+.meme-text {
+    font-size: 3.5rem;
+    font-weight: 950;
+    color: var(--text-black);
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.highlight {
+    color: #ff0000;
+    text-shadow: 3px 3px 0px var(--bg-yellow);
+    display: block;
+    margin-top: 5px;
+}
+
+.caution-label {
+    background: var(--text-black);
+    color: var(--bg-yellow);
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 900;
+    border-radius: 50px;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.main-msg {
+    font-size: 1.15rem;
+    color: #333;
+    margin: 35px 0;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.advance-sorry-box {
+    background: #fffafa;
+    border: 2px dashed #ff0000;
+    padding: 25px;
+    border-radius: 20px;
+    color: #8b0000;
+    font-weight: 700;
+    margin-bottom: 45px;
+    line-height: 1.4;
+}
+
+.sorry-badge {
+    background: #ff0000;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    margin-right: 8px;
+    font-size: 0.8rem;
+}
+
+/* ACTION BUTTON */
+.action-btn {
+    text-decoration: none;
+    background: var(--text-black);
+    color: #fff;
+    padding: 20px 60px;
+    border-radius: 100px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    display: inline-block;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 4px solid var(--text-black);
+}
+
+.action-btn:hover {
+    transform: scale(1.1) translateY(-5px);
+    background: #fff;
+    color: #000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-color: var(--text-black);
+}
+
+.page-footer {
+    padding: 30px 0;
+    font-size: 0.8rem;
+    color: #ccc;
+    font-weight: 800;
+    letter-spacing: 1px;
+}

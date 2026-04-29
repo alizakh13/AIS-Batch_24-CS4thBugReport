@@ -1,0 +1,160 @@
+/* PREMIUM MULBERRY NEON THEME FOR ZAINAB */
+:root {
+    --mulberry: #A67CA4;
+    --stormy-blue: #6A8CA9;
+    --plum: #857A9E;
+    --slate-rose: #C9A9B8;
+    --silver-mist: #CBD3D8;
+    --dark-void: #0a0b10;
+    --neon-mulberry: rgba(166, 124, 164, 0.6);
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at center, #1a1b25, var(--dark-void));
+    color: var(--silver-mist);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.registry-container {
+    width: 100%;
+    max-width: 1100px;
+    background: rgba(26, 27, 37, 0.6);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 3rem;
+    border: 1px solid rgba(166, 124, 164, 0.15);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--slate-rose);
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 1.5px solid var(--slate-rose);
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: var(--slate-rose);
+    color: var(--dark-void);
+    box-shadow: 0 0 20px var(--slate-rose);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.auth-token {
+    background: rgba(133, 122, 158, 0.2);
+    padding: 0.5rem 1.25rem;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    color: var(--mulberry);
+    border: 1px solid var(--mulberry);
+}
+
+.avatar-container {
+    width: 110px;
+    height: 110px;
+    margin: 2rem auto;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    box-shadow: 0 0 30px var(--neon-mulberry);
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+
+.accent-text {
+    color: var(--mulberry);
+    text-shadow: 0 0 15px var(--neon-mulberry);
+}
+
+.role-specification {
+    color: var(--stormy-blue);
+    font-weight: 600;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.content-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 2rem;
+    border-top: 5px solid;
+    transition: 0.3s;
+}
+
+.spec-card { border-top-color: var(--stormy-blue); }
+.error-card { border-top-color: var(--mulberry); }
+
+.content-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-5px);
+}
+
+.error-notification {
+    background: var(--plum);
+    color: white;
+    padding: 0.6rem;
+    border-radius: 8px;
+    font-weight: 800;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.code-execution-block {
+    background: #000;
+    padding: 1.25rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--mulberry);
+}
+
+pre {
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    color: var(--silver-mist);
+}
+
+.registry-footer {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.75rem;
+    color: var(--stormy-blue);
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .main-title { font-size: 2.2rem; }
+}

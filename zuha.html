@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registry | Zuha Mood Dynamics</title>
+    <link rel="stylesheet" href="zuha.css">
+</head>
+<body>
+
+    <main class="registry-container">
+        <nav class="navigation-bar">
+            <a href="CS4th.html" class="nav-btn btn-teal-outline">← SYSTEM_REGISTRY</a>
+            <a href="unsa.html" class="nav-btn btn-neon-glow">NEXT_PERSON →</a>
+        </nav>
+
+        <header class="registry-header">
+            <div class="auth-wrapper">
+                <span class="auth-id">AUTH_ID: 24-ARID-3528</span>
+            </div>
+            <div class="avatar-frame">
+                <div class="avatar-icon">💠</div>
+            </div>
+            <h1 class="main-name">Zuha <br><span class="highlight-text">MOOD QUEEN</span></h1>
+            <p class="designation">Memory Architect | Professional Excitement Killer</p>
+        </header>
+
+        <section class="data-grid">
+            <div class="data-card card-teal">
+                <div class="card-title">
+                    <span class="icon">✨</span>
+                    <h3>SYSTEM OPTIMIZATIONS</h3>
+                </div>
+                <ul class="info-list">
+                    <li><strong>Memory_Vault:</strong> Primary source for squad videos and core memory captures.</li>
+                    <li><strong>Idea_Support:</strong> Conditional logic: If (Mood > 80%) then { Support_Ideas = true }.</li>
+                    <li><strong>Intelli_Core:</strong> Advanced intelligence and high-confidence processing units.</li>
+                    <li><strong>Vibe_Active:</strong> System provides high-frequency energy when stable.</li>
+                </ul>
+            </div>
+
+            <div class="data-card card-warning">
+                <div class="card-title">
+                    <span class="icon">⚠️</span>
+                    <h3>CRITICAL BUG REPORT</h3>
+                </div>
+                <div class="error-banner">ERROR 909: VOLATILE_MOOD_SWING</div>
+                <p class="bug-details">
+                    System mood flips in &lt; 1 second. Warning: Negative mood triggers instant excitement termination.
+                </p>
+                <div class="logic-snippet">
+                    <pre><code>if (Mood == "Off") {
+    Squad_Excite = 0;
+    Execute = "Bharr_mein_jao";
+    Status = "Excitement_Killed";
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <footer class="registry-footer">
+            <p>Verified by Aliza Fatima😂..Sister, ap ka shukria pehle se mood swings kam karne ka</p>
+        </footer>
+    </main>
+<div class="note-section">
+    <button class="view-note-btn" onclick="toggleNote()">🔓 VIEW_SECRET_LOGS</button>
+    <div id="secretNote" class="hidden-note">
+        <span class="note-tag">SYSTEM_CONFESSION:</span>
+        "Sister, mood swings kam karne liye ap ka bht bht shukria.. Baki khush raha karain."
+    </div>
+</div>
+
+<script>
+function toggleNote() {
+    var x = document.getElementById("secretNote");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+</body>
+</html>
